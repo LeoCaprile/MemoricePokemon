@@ -1,0 +1,39 @@
+
+.card-container{
+    width: 150px;
+    height: 150px;
+   margin:2%;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card figure{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index:10;
+    transition: 0.5s all ;
+}
+
+.card .front{
+   background: white;
+}
+
+.card .back{
+    background: white;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.card.flip .front {
+    transform: rotateY(180deg);
+      z-index:0;
+  }
+  .card.flip .back {
+      transform: rotateY(360deg);
+      z-index:10;
+  }
