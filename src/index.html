@@ -17,32 +17,45 @@
             <h1 class="title">Memorice</h1>
 
             <div class="select">
-                <select>
-
-                    <option value="">Selecciona el tamaño</option>
+                <select class="puzzle-size">
+                    <option value="0">Selecciona el tamaño</option>
                     <option value="5">5 x 5</option>
                     <option value="6">6 x 6</option>
                     <option value="7">7 x 7</option>
                     <option value="8">8 x 8</option>
-
                 </select>
             </div>
             
 
-            <button class="button"><strong>Jugar</strong></button>
+            <button id="btn-play" class="button"><strong>Jugar</strong></button>
             
         </div>
 
 
 <!--contenedor de cartas-->
         
-        <div id="cards-box" class="cardbox box">
-
-                
+        <div id="cards-box" class="cardbox box">       
 
 </div>
 
 </div>
     
+<!--Modal overlay-->
+
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box modal-content">
+
+        <div class="modal-text">
+        <h1 style="font-size:xx-large; margin-bottom: 2%;">Has Encontrado todas las replicas!</h1>
+        <span>Tu tiempo ha sido</span> <strong class="time"></strong>
+        </div>
+
+        <button id="btn-modal" class="button">Aceptar</button>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

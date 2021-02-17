@@ -37,3 +37,16 @@
       transform: rotateY(360deg);
       z-index:10;
   }
+
+/*MODAL STYLES */
+
+
+
+  .modal-content{
+    text-align: center;
+
+  }
+
+  .modal-text{
+    margin-bottom: 5%;
+  }

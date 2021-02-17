@@ -6,10 +6,11 @@ import './js/botones.menu'
 
 export const set = new SetOfCards();
 
-set.GetCards(8);
 
-set.Shuffle();
 
-set.set.forEach(createCardHTML);
 
-set.flipCard()
+
+
+
+
+
