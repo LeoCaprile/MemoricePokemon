@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+
+
+}
+.centered{
+    display:flex;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+.size{
+    text-align: center;
+    width: 80vw;
+    margin-top: 5vh;
+    
+}
+
+.cardbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
