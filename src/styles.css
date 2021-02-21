@@ -23,3 +23,67 @@ body {
 .hidden {
   visibility: hidden;
 }
+
+.card-container {
+  width: 150px;
+  height: 150px;
+  margin: 2%;
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+  }
+}
+@media (max-width: 400px) {
+  .card-container {
+    width: 65px;
+    height: 65px;
+    margin: 2%;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.card figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: 10;
+  transition: 0.5s all;
+}
+
+.card .front {
+  background: #ffffff;
+}
+
+.card .back {
+  background: #ffffff;
+  z-index: 0;
+  transform: rotateY(180deg);
+}
+.card.flip .front {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+.card.flip .back {
+  transform: rotateY(360deg);
+  z-index: 10;
+}
+
+/*MODAL STYLES */
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-text {
+  margin-bottom: 5%;
+}
